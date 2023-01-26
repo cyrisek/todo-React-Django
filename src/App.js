@@ -138,7 +138,7 @@ class App extends React.Component {
 
     task.done = !task.done
     let csrftoken = this.getCookie('csrftoken')
-    let url = `http://127.0.0.1:8000/api/task-update/${task.id}/`
+    let url = `https://todo.up.railway.app/api/task-update/${task.id}/`
 
     fetch(url, {
       method: 'POST',
